@@ -1,0 +1,36 @@
+
+—
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(±ì“
+N	java:S106	"9Replace this use of System.out or System.err by a logger.(¾­È
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¾­È
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÿ°ûç
+S	java:S106"9Replace this use of System.out or System.err by a logger.(·ùßóıÿÿÿÿ
+M
+java:S1854G"7Remove this useless assignment to local variable "b42".(ïêš
+M
+java:S1854F"7Remove this useless assignment to local variable "b41".(”¨Ë“
+K
+java:S1854E"6Remove this useless assignment to local variable "b4".(ˆÜX
+L
+java:S1854D"6Remove this useless assignment to local variable "b3".(å«ˆ
+M
+java:S1854z"7Remove this useless assignment to local variable "dog".(ñŒß
+Q	java:S125("<This block of commented-out lines of code should be removed.(©¯Š
+V	java:S125/"<This block of commented-out lines of code should be removed.(´Ş¿ƒüÿÿÿÿ
+=
+java:S1481D"'Remove this unused "b3" local variable.(å«ˆ
+<
+java:S1481E"'Remove this unused "b4" local variable.(ˆÜX
+>
+java:S1481F"(Remove this unused "b41" local variable.(”¨Ë“
+>
+java:S1481G"(Remove this unused "b42" local variable.(ïêš
+N	java:S106H"9Replace this use of System.out or System.err by a logger.(›¶¢ş
+Q	java:S125J"<This block of commented-out lines of code should be removed.(€ƒ
+V	java:S125["<This block of commented-out lines of code should be removed.(ÉÙ‡‡ıÿÿÿÿ
+V	java:S125b"<This block of commented-out lines of code should be removed.(†Ö×ÿÿÿÿÿÿ
+S	java:S106m"9Replace this use of System.out or System.err by a logger.(‚«ê÷ûÿÿÿÿ
+S	java:S106x"9Replace this use of System.out or System.err by a logger.(ã¿¢Ôùÿÿÿÿ
+>
+java:S1481z"(Remove this unused "dog" local variable.(ñŒß
+Q	java:S125|"<This block of commented-out lines of code should be removed.(ğíÊù

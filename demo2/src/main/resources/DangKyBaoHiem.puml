@@ -1,0 +1,79 @@
+
+@startuml
+'https://plantuml.com/sequence-diagram
+skinparam shadowing false
+skinparam responseMessageBelowArrow false
+skinparam DefaultFontColor #222
+skinparam TitleFontSize 25
+skinparam NoteBorderColor #teal
+skinparam NoteBackgroundColor #powderblue
+skinparam NoteFontColor #444
+skinparam DatabaseBorderColor #teal
+skinparam DatabaseBackgroundColor #bisque
+skinparam sequence {
+ParticipantBorderThickness 1
+ParticipantBorderColor #teal
+ParticipantBackgroundColor #teal
+ParticipantFontColor #white141
+ParticipantFontSize 14
+ParticipantFontStyle bold5
+LifeMineBorderColor #teal
+LifeMineBackgroundColor #aliceblue
+ArrowColor #teal
+ActorBorderColor #teal
+GroupBorderThickness 1
+GroupBorderColor #teal
+GroupHeaderFontColor #white
+GroupBackgroundColor #teal
+GroupFontColor #teal
+}
+autonumber
+actor Client as Client
+participant "VTM" as VTM
+participant "CBH" as CBH
+participant "Công ty CBH" as CTCBH
+
+Client -->Client : Chọn dịch vụ chuyển tiền
+Client -> VTM : Ấn tiếp tục
+VTM -->VTM : Kiểm tra thỏa mãn điều kiện khách hàng(điều kiện trong dd)
+alt không thỏa mãn
+    VTM-->VTM : hiển thị luồng chuyển tiền thông thường
+else thỏa mãn
+    VTM-->VTM : Lấy thông tin bảo hiểm
+    VTM-->Client : Giao diện thông tin chuyển tiền + bảo hiểm
+    Client -->Client : Mua bảo hiểm hay không ?
+    alt không
+        VTM-->VTM : Xác nhận hủy bảo hiểm
+        VTM-->VTM : Chuyển về luồng chuyển tiền thông thường
+    else có
+        VTM-->Client : Hiển thị màn hình nhập PIN + OTP để xác thực giao dịch
+        Client -->VTM : Nhập PIN + OTP
+        VTM-->VTM : Xử lý giao dịch chuyển tiền
+        alt không thành công
+            VTM-->Client : Trả lỗi thất bại/timeout
+        else thành công
+            VTM-->VTM : đăng ký thanh toán bảo hiểm tự động
+            alt đăng ký không thành công
+                VTM-->VTM : luồng retry đăng ký thanh toán tự động
+            else đăng ký thành công
+                 VTM-->VTM : trừ phí đăng ký bảo hiểm kì 1
+                 alt không thành công
+                    VTM-->VTM : luồng rety trừ phí
+                 else thành công
+                    VTM-->CBH : Đẩy thông tin tạo HĐBH
+                    CBH --> CTCBH : tiếp nhận thông tin và đẩy sang công ty bảo hiểm
+                    CTCBH --> CTCBH: Tạo hơp đồng bảo hiểm
+                    alt không thành công
+                        CBH-->CBH : Luồng retry tạo HĐ
+                    else thành công
+                         CTCBH-->CBH : Cập nhật thông tin HĐ
+                        CBH-->Client : Gửi SMS
+                        CBH-->VTM : Lưu thông tin HĐ
+                    end
+                 end
+            end
+        end
+    end
+end
+
+@enduml

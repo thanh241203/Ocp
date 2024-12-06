@@ -1,0 +1,40 @@
+
+@startuml
+'https://plantuml.com/sequence-diagram
+skinparam shadowing false
+skinparam responseMessageBelowArrow false
+skinparam DefaultFontColor #222
+skinparam TitleFontSize 25
+skinparam NoteBorderColor #teal
+skinparam NoteBackgroundColor #powderblue
+skinparam NoteFontColor #444
+skinparam DatabaseBorderColor #teal
+skinparam DatabaseBackgroundColor #bisque
+skinparam sequence {
+ParticipantBorderThickness 1
+ParticipantBorderColor #teal
+ParticipantBackgroundColor #teal
+ParticipantFontColor #white141
+ParticipantFontSize 14
+ParticipantFontStyle bold5
+LifeMineBorderColor #teal
+LifeMineBackgroundColor #aliceblue
+ArrowColor #teal
+ActorBorderColor #teal
+GroupBorderThickness 1
+GroupBorderColor #teal
+GroupHeaderFontColor #white
+GroupBackgroundColor #teal
+GroupFontColor #teal
+}
+autonumber
+actor "Core chuyển tiền" as Core
+participant "VTM" as VTM
+participant "Bundle Service" as BundleS
+participant "Core Payment Auto Payment " as CorePayment
+
+Core -> VTM : chuyển tiền thành công và trả kết quả cho VTM
+VTM -> BundleS : Gửi yêu cầu đăng ký bảo hiểm tự động
+BundleS -->BundleS : Khởi tạo bản nghi đăng ký thanh toán tự động
+BundleS --> Core : Gửi yêu cầu kiểm tra kết quả GD
+@enduml
