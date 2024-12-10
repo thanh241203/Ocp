@@ -33,13 +33,3 @@ _
 /src/main/java/com/example/demo/chap4/Human.java,a\5\a5d5b6f0f2cb2234acbd1368727511315eb94085
 ]
 -src/main/java/com/example/demo/chap4/Dog.java,e\8\e863f297a9125c8a3216519131aa052e28ecc68d
-i
-9src/main/java/com/example/demo/chap4/primiti/Primiti.java,3\1\310c8aaf6d5c18094a99c7e423482e81ed95a6e7
-e
-5src/main/java/com/example/demo/chap1/HeavyAnimal.java,6\b\6b1a836afd7ce08da990902aabcd429ed8effa24
-_
-/src/main/java/com/example/demo/chap1/Hippo.java,c\b\cb8d70dc43cc06795ec9ced5e8edf6d021cc5de2
-b
-2src/main/java/com/example/demo/chap1/Elephant.java,4\7\47c8ccd75f50c97b691fa915f73e1b70e23101d4
-d
-4src/main/java/com/example/demo/chap5/DateAndTim.java,b\1\b1de6326badc8429cf3b7a0b73b2267d30e61da6
