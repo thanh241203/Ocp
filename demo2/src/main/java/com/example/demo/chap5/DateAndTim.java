@@ -47,13 +47,48 @@ public class DateAndTim {
          */
         LocalDate localDateYear = LocalDate.of(0, 1, 1);
         System.out.println(localDateYear); //0000-01-01
+        LocalTime localTime123 = LocalTime.of(0, 0, 0, 0);
+        System.out.println(localTime123);
         LocalDate localDateMonth = LocalDate.of(0, 1, 1);
-        System.out.println(localDateMonth); //Exception : Invalid value for MonthOfYear (valid values 1 - 12): 0
+//        System.out.println(localDateMonth); //Exception : Invalid value for MonthOfYear (valid values 1 - 12): 0
         LocalDate localDateDay = LocalDate.of(0, 1, 0);
-        System.out.println(localDateDay); //Exception :  Invalid value for DayOfMonth (valid values 1 - 28/31): 0
+//        System.out.println(localDateDay); //Exception :  Invalid value for DayOfMonth (valid values 1 - 28/31): 0
 
         /**
-         *
+         * khi tạo mới một time, bạn có thể chỉ định chi tiết bạn muốn, thậm chí đến cả nano giây
          */
+        // public static LocalTime of(int hour, int minute, int second, int nanos)
+
+        LocalTime localTime = LocalTime.of(1, 1, 1, 1);
+        LocalDateTime dateTime = LocalDateTime.of(1, 1, 1, 1, 1, 1, 1);
+        LocalDate localDate = LocalDate.of(1, 1, 1); // chi áp dụng đến ngày
+        /**
+         * Combine dates và time trong cùng một object:
+         */
+        //cách 1
+        LocalDateTime dateTime1 = LocalDateTime.of(2015, Month.JANUARY, 20, 6, 15, 30);
+        System.out.println(dateTime1); //2015-01-20T06:15:30
+        //cách 2
+        LocalDate localDate1 = LocalDate.of(2025, 1, 20);
+        LocalTime localTime1 = LocalTime.of(6, 15, 30);
+        LocalDateTime dateTime12 = LocalDateTime.of(localDate1, localTime1);
+        System.out.println(dateTime12);//2015-01-20T06:15:30
+
+        /**
+         * time zone
+         */
+        ZoneId zoneId = ZoneId.of("US/Eastern");
+        //khai báo trực tiếp
+        ZonedDateTime time = ZonedDateTime.of(2025, 1, 20, 6,
+                15, 30, 200, zoneId);
+        // khai báo localDate , localTime , ZoneId vào trong
+        ZonedDateTime zonedDateTime1 = ZonedDateTime.of(date1, localTime, zoneId);
+        //khai báo localDateTime
+        ZonedDateTime zonedDateTime2 = ZonedDateTime.of(dateTime1, zoneId);
+
+        /**
+         * finding time zone
+         */
+
     }
 }
