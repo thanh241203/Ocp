@@ -38,20 +38,20 @@ public class DateAndTim {
          *  Month :  là một lớp enum không phải là int , nên không thể so sánh được với dạng số
          */
         Month month = Month.MAY;
-//        boolean b1 = month == 1; // Don't complie
+//        boolean b1 = month == 1; // Don't compile
         boolean b2 = month == Month.AUGUST;
         System.out.println(b2); // false
 
         /**
-         * Mặc dù java bắt đầu từ 0 . Nhưng month là một exception , sẽ bắt đầu từ 1
+         * Mặc dù java bắt đầu từ 0 . Nhưng month,day là một exception , sẽ bắt đầu từ 1
          */
-        LocalDate localDateYear = LocalDate.of(0, 1, 1);
+        LocalDate localDateYear = LocalDate.of(0, 1, 8);
         System.out.println(localDateYear); //0000-01-01
         LocalTime localTime123 = LocalTime.of(0, 0, 0, 0);
-        System.out.println(localTime123);
+//        System.out.println(localTime123);
         LocalDate localDateMonth = LocalDate.of(0, 1, 1);
 //        System.out.println(localDateMonth); //Exception : Invalid value for MonthOfYear (valid values 1 - 12): 0
-        LocalDate localDateDay = LocalDate.of(0, 1, 0);
+//        LocalDate localDateDay = LocalDate.of(0, 1, 0);
 //        System.out.println(localDateDay); //Exception :  Invalid value for DayOfMonth (valid values 1 - 28/31): 0
 
         /**
@@ -86,9 +86,24 @@ public class DateAndTim {
         //khai báo localDateTime
         ZonedDateTime zonedDateTime2 = ZonedDateTime.of(dateTime1, zoneId);
 
-        /**
-         * finding time zone
+        /** finding time zone
+         *
          */
+        // Cách để tìm time zone của mình
+        System.out.println("default " + ZoneId.systemDefault());
 
+        // Cách để biết những time zone khác ( khuyến khích dùng US/Eastern time zone to America/New york)
+        ZoneId.getAvailableZoneIds().stream().filter(z -> z.contains("US") || z.contains("America")).forEach(System.out::println);
+
+        /**
+         * the date and time class có private constructors , điều này bắt bạn phải dùng các static methods
+         */
+//        LocalDate localDate2=new LocalDate(); // not compile
+
+        /**
+         * Trường hợp nếu bạn truyền vào date or time không hợp lệ
+         */
+//        System.out.println( LocalDate.of(2015, 2, 32));  java.time.DateTimeException: Invalid value for DayOfMonth
+// (valid values 1—28/31): 32
     }
 }

@@ -89,5 +89,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:6.1.12" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:6.1.12" level="project" />
     <orderEntry type="library" name="Maven: com.jcraft:jsch:0.1.55" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.13.0" level="project" />
   </component>
 </module>
