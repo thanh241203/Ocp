@@ -105,5 +105,67 @@ public class DateAndTim {
          */
 //        System.out.println( LocalDate.of(2015, 2, 32));  java.time.DateTimeException: Invalid value for DayOfMonth
 // (valid values 1—28/31): 32
+
+
+        /**
+         * Manipulating dates and times
+         */
+
+        LocalDate localDate2 = LocalDate.of(2020, 2, 20);
+        LocalTime localTime2 = LocalTime.of(5, 15);
+        LocalDateTime dateTime2 = LocalDateTime.of(localDate2, localTime2);
+        System.out.println(dateTime2);
+        dateTime2 = dateTime2.minusDays(2);
+        System.out.println("Minus Day :" + dateTime2);
+        dateTime2 = dateTime2.minusHours(10);
+        System.out.println("Minus hour : " + dateTime2);
+
+        // Cách viết gắn ngọn gơn
+        LocalDateTime dateTime3 = LocalDateTime.of(localDate2, localTime2).minusDays(1).minusHours(2);
+        System.out.println("date time 3 : " + dateTime3);
+
+        /** Working with periods
+         * Dùng để đại diện một khoảng thời gian trong java
+         * Period chỉ có thể chứa : years,months,days .
+         * Không áp dụng cho time
+         */
+//        Period period=Period.of(1,1,1,1); // not compile
+        LocalDate start = LocalDate.of(2015, Month.JANUARY, 1);
+        LocalDate end = LocalDate.of(2015, Month.MARCH, 30);
+        Period period = Period.ofMonths(1);
+        Period period3 = Period.between(start, end);
+        System.out.println("period 3:" + period3);
+        performAnimalEnrichment(start, end, period);
+
+        /**
+         * way to create a Period class
+         */
+        Period period1 = Period.ofYears(1); // same for months,days,weeks
+        Period period2 = Period.of(1, 0, 1);
+
+        /**
+         * bạn không thể xâu các chuỗi các phương thức với class Period
+         *
+         */
+//        Period wrong = Period.ofYears(1).ofWeeks(1);
+        Period wrong = Period.ofYears(1);
+        wrong = Period.ofWeeks(1);
+        System.out.println("wrong:" + wrong); //P7D
+
+        LocalDate localDate3 = LocalDate.of(2015, 1, 20);
+        LocalTime localTime3 = LocalTime.of(6, 15);
+        LocalDateTime dateTime4 = LocalDateTime.of(localDate3, localTime3);
+        Period period4 = Period.ofMonths(1);
+        System.out.println("local date 3 :" + localDate3.plus(period4));
+        System.out.println("dateTime 4 :" + dateTime4.plus(period4));
+//        System.out.println("local time 3 :" + localTime3.plus(period4)); // UnsupportedTemporalTypeException
+    }
+
+    private static void performAnimalEnrichment(LocalDate start, LocalDate end, Period period) {
+        LocalDate localDate = start;
+        while (localDate.isBefore(end)) {
+            System.out.println("give new toy :" + localDate);
+            localDate = localDate.plus(period);
+        }
     }
 }

@@ -17,5 +17,14 @@ public class main {
          */
         HippoFather hippoFather = new HippoFather("s", 12);
         System.out.println("With toStringBuilder method : " + hippoFather);
+
+        /** equal
+         * Dùng để xem hai đối tượng có tương đương nhau không
+         * Trong StringBuilder , method equal() dùng để check xem 2 đối tượng có đang trỏ đến cùng một chỗ hay không
+         *
+         */
+        StringBuilder s1 = new StringBuilder("a");
+        StringBuilder s2 = new StringBuilder("a");
+        System.out.println("s1 equal s2 : " + s1.equals(s2));
     }
 }
