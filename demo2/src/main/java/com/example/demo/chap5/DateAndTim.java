@@ -1,6 +1,7 @@
 package com.example.demo.chap5;
 
 import java.time.*;
+import java.time.temporal.ChronoUnit;
 
 public class DateAndTim {
     public static void main(String[] args) {
@@ -159,6 +160,50 @@ public class DateAndTim {
         System.out.println("local date 3 :" + localDate3.plus(period4));
         System.out.println("dateTime 4 :" + dateTime4.plus(period4));
 //        System.out.println("local time 3 :" + localTime3.plus(period4)); // UnsupportedTemporalTypeException
+
+        /** Working with Durations
+         * Dành cho các đơn vị liên quan đến time
+         * Bạn có thể chỉ định số ngày,giờ,phút,giây,nano giây
+         * Duration không có constructor mà chứa nhiều units => Bạn chỉ có thể khai báo 1 kiểu thời gian nhất định
+         *
+         */
+
+        /**
+         * Create a Duration
+         */
+        System.out.println("duration day : " + Duration.ofDays(2)); //PT48H
+        System.out.println("duration hour : " + Duration.ofHours(2)); //PT2H
+
+        /**
+         * TemporalUnit trong Duration
+         * Là một interface , được duy nhất enum class ChronoUnit kế thừa
+         * Được sử dụng để mô phỏng : độ lệch thời gian , múi giờ , kỷ nguyên
+         * Có nghĩa là thay vì khai báo cụ thể ofDays || ofHours , sẽ khai báo một số và chỉ định dạng thời gian
+         */
+
+        System.out.println("daily half day : " + Duration.of(1, ChronoUnit.HALF_DAYS));
+        System.out.println("daily day : " + Duration.of(1, ChronoUnit.DAYS));
+        System.out.println("daily minutes : " + Duration.of(1, ChronoUnit.MINUTES));
+        System.out.println("daily millis : " + Duration.of(1, ChronoUnit.MILLIS));
+
+        /** ChronoUnit for Differences
+         *  Dùng để khoảng cách chênh lệch thời gian
+         */
+        LocalTime localTime4 = LocalTime.of(5, 30);
+        LocalTime localTime5 = LocalTime.of(3, 20);
+        System.out.println("khoang thoi gian  lech la : " + ChronoUnit.HOURS.between(localTime4, localTime5));
+        System.out.println("khoang thoi gian phut  lech la : " + ChronoUnit.MINUTES.between(localTime4, localTime5));
+        System.out.println("khoang thoi gian giay  lech la : " + ChronoUnit.SECONDS.between(localTime4, localTime5));
+
+        /**
+         * Using Duration
+         */
+        LocalDate date13 = LocalDate.of(2015, 1, 20);
+        LocalTime time13 = LocalTime.of(6, 15);
+        LocalDateTime dateTime13 = LocalDateTime.of(date13, time13);
+        Duration duration = Duration.ofHours(6);
+        System.out.println(dateTime13.plus(duration)); //2015-01-20T12:15
+        System.out.println(date13.plus(duration)); //Unsupported unit: Seconds
     }
 
     private static void performAnimalEnrichment(LocalDate start, LocalDate end, Period period) {
