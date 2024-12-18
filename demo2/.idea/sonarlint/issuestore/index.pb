@@ -53,3 +53,15 @@ i
 9src/main/java/com/example/demo/chap4/primiti/Primiti.java,3\1\310c8aaf6d5c18094a99c7e423482e81ed95a6e7
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+r
+Bsrc/main/java/com/example/demo/chap1/equhascodetostring/Hippo.java,5\0\5051295cb45d152a778b37392bd8775fd22edb51
+q
+Asrc/main/java/com/example/demo/chap1/equhascodetostring/Lion.java,6\2\62c2801c4a5d1022d6d91882b1f39db9734b235f
+x
+Hsrc/main/java/com/example/demo/chap1/equhascodetostring/HippoFather.java,9\0\90d518154a5e0f9731c26b718c0df43ec164b0ab
+d
+4src/main/java/com/example/demo/chap5/DateAndTim.java,b\1\b1de6326badc8429cf3b7a0b73b2267d30e61da6
+g
+7src/main/java/com/example/demo/chap5/instanct/main.java,d\2\d22718d5eb14300f37662d9f97c94706976aaec0
+q
+Asrc/main/java/com/example/demo/chap1/equhascodetostring/main.java,e\a\eae0337464346714958013ef1a1db29e0ca142b5

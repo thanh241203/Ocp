@@ -1,0 +1,84 @@
+
+P
+java:S1854š"9Remove this useless assignment to local variable "wrong".(¤ê¦³
+W
+java:S1854“";Remove this useless assignment to local variable "period2".(Ñ´ô¢üÿÿÿÿ
+R
+java:S1854’";Remove this useless assignment to local variable "period1".(â’ Ø
+]
+java:S1854Z"BRemove this useless assignment to local variable "zonedDateTime2".(Š±¡€úÿÿÿÿ
+X
+java:S1854X"BRemove this useless assignment to local variable "zonedDateTime1".(†ªüõ
+N
+java:S1854U"8Remove this useless assignment to local variable "time".(›ý¾ 
+S
+java:S1854C"=Remove this useless assignment to local variable "localDate".(Òµí‘
+R
+java:S1854B"<Remove this useless assignment to local variable "dateTime".(òÁ­Ë
+X
+java:S18547"BRemove this useless assignment to local variable "localDateMonth".(ùÅÂ‡
+[
+java:S18545"@Remove this useless assignment to local variable "localTime123".(µ¥œÃüÿÿÿÿ
+O
+java:S1854&"9Remove this useless assignment to local variable "date2".(ðÐµ±
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Úî‘äûÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(Êó©8
+N	java:S106"9Replace this use of System.out or System.err by a logger.(£ú¦Ì
+N	java:S106"9Replace this use of System.out or System.err by a logger.(·‘úø
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¡Àæƒ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(’ÛÑâûÿÿÿÿ
+@
+java:S1481&"*Remove this unused "date2" local variable.(ðÐµ±
+S	java:S106."9Replace this use of System.out or System.err by a logger.(Ú×ê»þÿÿÿÿ
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(´…ž°ùÿÿÿÿ
+L
+java:S14815"1Remove this unused "localTime123" local variable.(µ¥œÃüÿÿÿÿ
+V	java:S1256"<This block of commented-out lines of code should be removed.(ÛãÃ¬úÿÿÿÿ
+I
+java:S14817"3Remove this unused "localDateMonth" local variable.(ùÅÂ‡
+Q	java:S1259"<This block of commented-out lines of code should be removed.(ÚÂ¬
+V	java:S125?"<This block of commented-out lines of code should be removed.(ß°Âüÿÿÿÿ
+C
+java:S1481B"-Remove this unused "dateTime" local variable.(òÁ­Ë
+D
+java:S1481C".Remove this unused "localDate" local variable.(Òµí‘
+S	java:S106I"9Replace this use of System.out or System.err by a logger.(ùœèËøÿÿÿÿ
+S	java:S106N"9Replace this use of System.out or System.err by a logger.(ùÀ¨Óùÿÿÿÿ
+?
+java:S1481U")Remove this unused "time" local variable.(›ý¾ 
+I
+java:S1481X"3Remove this unused "zonedDateTime1" local variable.(†ªüõ
+N
+java:S1481Z"3Remove this unused "zonedDateTime2" local variable.(Š±¡€úÿÿÿÿ
+N	java:S106`"9Replace this use of System.out or System.err by a logger.(¨é³
+N	java:S106c"9Replace this use of System.out or System.err by a logger.(öÚæö
+N	java:S106x"9Replace this use of System.out or System.err by a logger.(Ÿÿ¶Þ
+S	java:S106z"9Replace this use of System.out or System.err by a logger.(»´†Éúÿÿÿÿ
+N	java:S106|"9Replace this use of System.out or System.err by a logger.(­–ÃÈ
+T	java:S106€"9Replace this use of System.out or System.err by a logger.(û‰Ò×ÿÿÿÿÿ
+T	java:S106Œ"9Replace this use of System.out or System.err by a logger.(¹ÿúÿÿÿÿ
+C
+java:S1481’",Remove this unused "period1" local variable.(â’ Ø
+H
+java:S1481“",Remove this unused "period2" local variable.(Ñ´ô¢üÿÿÿÿ
+R	java:S125™"<This block of commented-out lines of code should be removed.(•Ô³Ø
+T	java:S106œ"9Replace this use of System.out or System.err by a logger.(…Ûèûÿÿÿÿ
+T	java:S106¢"9Replace this use of System.out or System.err by a logger.(âÛº¤üÿÿÿÿ
+O	java:S106£"9Replace this use of System.out or System.err by a logger.(ü¨ú
+T	java:S106°"9Replace this use of System.out or System.err by a logger.(®µûúÿÿÿÿ
+T	java:S106±"9Replace this use of System.out or System.err by a logger.(´Ç’ýþÿÿÿÿ
+O	java:S106º"9Replace this use of System.out or System.err by a logger.(³ßä
+O	java:S106»"9Replace this use of System.out or System.err by a logger.(êÝÿ£
+O	java:S106¼"9Replace this use of System.out or System.err by a logger.(Œ—¡ƒ
+T	java:S106½"9Replace this use of System.out or System.err by a logger.(ß›ÚÌÿÿÿÿÿ
+T	java:S106Ä"9Replace this use of System.out or System.err by a logger.(í‚œøÿÿÿÿ
+T	java:S106Å"9Replace this use of System.out or System.err by a logger.(Â¶úÿÿÿÿ
+T	java:S106Æ"9Replace this use of System.out or System.err by a logger.(£ñ…ûÿÿÿÿ
+O	java:S106Ï"9Replace this use of System.out or System.err by a logger.(… Ý
+O	java:S106Ö"9Replace this use of System.out or System.err by a logger.(·ó««
+T	java:S106Ø"9Replace this use of System.out or System.err by a logger.(Þ¤ÿÿÿÿÿ
+T	java:S106ß"9Replace this use of System.out or System.err by a logger.(äã€Šûÿÿÿÿ
+T	java:S106à"9Replace this use of System.out or System.err by a logger.(ËØ…”øÿÿÿÿ
+N	java:S106æ"9Replace this use of System.out or System.err by a logger.(ºùp
+W
+java:S1128"ARemove this unused import 'org.springframework.cglib.core.Local'.(ÁÒû

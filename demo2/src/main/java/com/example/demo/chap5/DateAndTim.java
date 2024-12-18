@@ -1,5 +1,7 @@
 package com.example.demo.chap5;
 
+import org.springframework.cglib.core.Local;
+
 import java.time.*;
 import java.time.temporal.ChronoUnit;
 
@@ -203,7 +205,23 @@ public class DateAndTim {
         LocalDateTime dateTime13 = LocalDateTime.of(date13, time13);
         Duration duration = Duration.ofHours(6);
         System.out.println(dateTime13.plus(duration)); //2015-01-20T12:15
-        System.out.println(date13.plus(duration)); //Unsupported unit: Seconds
+//        System.out.println(date13.plus(duration)); //Unsupported unit: Seconds
+
+        /** Working with Instants
+         * dùng để đại diện một khoảng khắc nhất định trong GMT time zone .
+         */
+        Instant instant = Instant.now();
+        System.out.println("asasdsds");
+        Instant later = Instant.now();
+        System.out.println(" duration :" + Duration.between(instant, later).toMillis());
+
+        LocalDate localDate4 = LocalDate.of(2015, 5, 5);
+        LocalTime localTime6 = LocalTime.of(11, 55, 55);
+        ZoneId zoneId1 = ZoneId.of("US/Eastern");
+        ZonedDateTime zonedDateTime3 = ZonedDateTime.of(localDate4, localTime6, zoneId1);
+        Instant instant1 = zonedDateTime3.toInstant();
+        System.out.println(zonedDateTime3);
+        System.out.println(instant1);
     }
 
     private static void performAnimalEnrichment(LocalDate start, LocalDate end, Period period) {
