@@ -1,0 +1,10 @@
+
+h
+java:S1104."RMake repeat a static final constant or non-public and provide accessors if needed.(Ç¶äõ
+g	java:S101X"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‘‚‡ùÿÿÿÿ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(š—°øÿÿÿÿ
+S	java:S106I"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+N	java:S106J"9Replace this use of System.out or System.err by a logger.(¯ô¢ô
+N	java:S106K"9Replace this use of System.out or System.err by a logger.(Áß‡Ü
+œ
+java:S1186["€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(’Çï¹şÿÿÿÿ

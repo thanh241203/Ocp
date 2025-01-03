@@ -1,0 +1,11 @@
+
+X
+java:S1854"=Remove this useless assignment to local variable "elephant1".(š²®¶úÿÿÿÿ
+K
+java:S1854	"5Remove this useless assignment to local variable "s".(â˜Ê”
+6
+java:S2129	" Remove this "String" constructor(â˜Ê”
+<
+java:S1481	"&Remove this unused "s" local variable.(â˜Ê”
+I
+java:S1481".Remove this unused "elephant1" local variable.(š²®¶úÿÿÿÿ

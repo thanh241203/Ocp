@@ -1,0 +1,24 @@
+
+L
+java:S3740"/Provide the parametrized type for this generic.(ßúÆ÷8•¾³±Á2
+K
+java:S3740"/Provide the parametrized type for this generic.(’½I8—¾³±Á2
+K
+java:S3740"/Provide the parametrized type for this generic.(’½I8—¾³±Á2
+Q
+java:S3740"/Provide the parametrized type for this generic.(µÖš£şÿÿÿÿ8˜¾³±Á2
+t
+java:S2293
+"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÂÏÿÃÿÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡
+b
+java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(Çµí‘
+—
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(²÷ĞÓ
+N	java:S106	"9Replace this use of System.out or System.err by a logger.(¾­È
+9
+java:S2326"T is not used in the method.(²÷ĞÓ8‹²­Á2
+9
+java:S2326"T is not used in the method.(ßúÆ÷8„•Æ­Á2
+T	java:S106"9Replace this use of System.out or System.err by a logger.(­Š¹8–Ê­Á2
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(© —ıÿÿÿÿ8‡“Ì­Á2

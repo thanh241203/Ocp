@@ -1,10 +1,0 @@
-
-S	java:S106"9Replace this use of System.out or System.err by a logger.(¯´¡—ùÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ
-l
-java:S4276"QRefactor this code to use the more specialised Functional Interface 'IntSupplier'(äòÅÙøÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(Ûšı¹şÿÿÿÿ
-S	java:S106!"9Replace this use of System.out or System.err by a logger.(ßÖÈØşÿÿÿÿ
-Z	java:S106%"9Replace this use of System.out or System.err by a logger.(Û¯œÿûÿÿÿÿ8™ı£š«2
-F
-java:S1128")Remove this unused import 'java.sql.Ref'.(Ë­¤8ƒ§´›«2
