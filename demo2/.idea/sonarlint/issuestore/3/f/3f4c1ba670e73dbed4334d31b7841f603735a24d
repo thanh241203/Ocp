@@ -1,0 +1,17 @@
+
+E
+java:S3740"/Provide the parametrized type for this generic.(ώμβ
+o
+java:S2293&"YReplace the type specification in this constructor call with the diamond operator ("<>").(¬Άα
+N	java:S106"9Replace this use of System.out or System.err by a logger.(”Έ€
+N	java:S106"9Replace this use of System.out or System.err by a logger.(”Έ€
+P
+java:S1854'";Remove this useless assignment to local variable "sparrow".(ΪΰφE
+N
+java:S1854&"8Remove this useless assignment to local variable "list".(¬Άα
+?
+java:S1481&")Remove this unused "list" local variable.(¬Άα
+A
+java:S1481'",Remove this unused "sparrow" local variable.(ΪΰφE
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(η…ή
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(‹¥’‚
